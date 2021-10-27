@@ -1,0 +1,154 @@
+.presentation{
+    background: url('img/Ombriere-Rendu-10b.jpg') no-repeat fixed;
+    background-size: cover;
+    text-align: center;
+    color: azure;
+}
+.appel{
+    position: fixed;
+    margin-left:91%;
+    margin-top: 15%;
+    background-color: rgb(29, 79, 145);
+    padding: 1%;
+    width: 200px;
+    border-radius: 35%;
+    color: white;
+    z-index: 1;
+}
+
+#mapid{
+    margin-top: 10%;
+    width: 100%;
+    height: 700px;
+    /*
+    margin-left: auto;
+    margin-right: auto
+    */
+}
+
+section{
+    margin-top:2%;
+    text-align: center;
+   
+}
+.col-6{
+    margin-top: 5%;
+}
+section.content{
+    margin: 0!important;
+    width: 100%;
+    color: white;
+    height: 100%;
+    background-color: rgb(29, 79, 145);
+}
+.euh{
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+h5{
+    color: rgb(255, 205, 41);
+}
+.card{
+    
+    font-size: 16px;
+    overflow: auto;
+}
+.card-img-top{
+    height: 300px;
+    width: 300;
+    
+}
+.formul {
+   display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin: 3%;
+    
+  }
+.cta-section-confiance{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.cta-section-confiance.a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+}
+.crois{
+    padding-top: 10%;
+}
+.crois>a{
+    text-decoration: none;
+    color: rgb(255, 205, 41);
+    width: 100px;
+}
+h2 {
+    margin-top: 10%;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  h2:before,
+  h2:after {
+    background-color: rgb(255, 205, 41);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+  }
+  
+  h2:before {
+    right: 1em;
+    margin-left: -50%;
+  }
+  
+  h2:after {
+    left: 1em;
+    margin-right: -50%;
+  }
+h2{ 
+    margin-top:5%;
+}
+
+section{
+    font-size: x-large;
+}
+.flou{
+    
+    background-color: rgba(0, 0, 0, 0.367);
+    min-height: 800px;
+}
+
+.element{
+    margin: 5%;
+}
+.cta{
+    margin-top: 20%;
+    color: rgb(255, 205, 41);
+    text-decoration: none;
+}
+.ctap{
+    text-decoration: none;
+    color: rgb(255, 205, 41);
+}
+.ctap:hover{
+    color: rgb(255, 205, 41);
+    text-decoration: underline;
+}
+.cta:hover{
+    color: rgb(255, 205, 41);
+    text-decoration: underline;
+}
+.carousel{
+    margin-left: 20%;
+}
+
+
+@media (max-width: 500px){
+    .appel {
+        display: none;
+    }
+}

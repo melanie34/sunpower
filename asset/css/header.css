@@ -1,0 +1,17 @@
+.navbar-nav{
+    
+    margin-left: 300px;
+}
+.navbar-item{
+    margin: 30px;
+}
+nav{
+    position: sticky!important;
+    top: 0;
+    
+}
+
+.navbar-button{
+
+    margin-left: 150px;
+}

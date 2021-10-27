@@ -1,0 +1,19 @@
+@import 'contact.css'; 
+@import 'composant.css';
+@import 'activite.css';
+@import 'header.css';
+@import 'footer.css';
+@import 'references.css';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    font-family: 'Scheherazade New', serif;
+    
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Libre Baskerville', serif;
+}

@@ -1,0 +1,33 @@
+.section-activite{
+    text-align:left;
+    font-family: 'Scheherazade New', serif;
+}
+.section-activite>h3{
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    text-align: left;
+}
+h3 {
+    
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  
+  h3:before,
+  h3:after {
+    background-color: rgb(255, 205, 41);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+  }
+  .ele{
+      color: white;
+      background-color: rgb(29, 79, 145);
+      padding-left: 12%;
+      height: 6%px;
+  }

@@ -1,0 +1,117 @@
+#section1 {
+    background: url(/asset/img/entreprise.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+}
+#section1 .contenu-references {
+    padding-top: 150px;
+    color: white;
+}
+#section1 h2 {
+    color: yellow;
+}
+#section1 .drk {
+    position: absolute;
+    
+    width: 100%;
+    min-height: 700px;
+    background: rgba(0, 0, 0, 0.7);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+/*   .wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  } */
+  
+  
+  
+  #section2 .container {
+    overflow: hidden;
+    padding: 20px 10px;
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+  }
+  
+  #section2 .container:before {
+    content: '';
+    width: 8px;
+    height: 100%;
+    background: #313131;
+    position: absolute;
+    left: 20px;
+  }
+  
+  #section2 .job {
+    background: white;
+    padding: 20px;
+    margin: 20px 60px;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+    -webkit-box-shadow: -5px 5px 41px -18px rgba(0,0,0,0.75);
+  -moz-box-shadow: -5px 5px 41px -18px rgba(0,0,0,0.75);
+  box-shadow: -5px 5px 41px -18px rgba(0,0,0,0.75);
+  text-align: left;
+  }
+  
+.job h2 {
+    font-size: 30px;
+    color: #6ab04c;
+    border: 2px solid #535c68;
+    padding: 4px;
+    border-radius: 8px;
+  }
+.job ul {
+    list-style-type: none;
+}
+  
+.job:before {
+    content: '';
+    width: 100px;
+    height: 0;
+    background: white;
+    left: -10px;
+    top: 50%;
+    transform: translatey(-50%) rotate(45deg);
+    position: absolute;
+    z-index: -1;
+    border: 2px solid #000;
+  }
+  
+  .job:after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: #badc58;
+    border-radius: 50%;
+    border: 4px solid #313131;
+    left: -65px;
+    top: 50%;
+    transform: translatey(-50%) rotate(45deg);
+    position: absolute;
+  }
+  #section3 {
+    background: rgb(29,79,145);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100px;
+    text-align: center;
+    color: white;
+  }
+  #section3 img {
+      border-radius: 150%;
+      max-height: 200px;
+  }
+  

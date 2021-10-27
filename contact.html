@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunpower</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" href="asset/img/icon.ico" type="image/icon">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https : //fonts.googleapis.com/css2? family= Libre+Baskerville & display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light p-md-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img style=margin-left:-100px;max-width:150px; src="img/logo.png"></a>
+            <p class="text-black">Penses énergie, penses écologie,<br>Penses SunPower</p>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-black">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="references.html" class="nav-link text-black">Nos références</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Nos activités
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="activite.html">La recherche et le développement</a>
+                            <a class="dropdown-item" href="activite.html#omb">Les Ombrières solaire</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="activite.html#acc">L'accompagnement</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button class="btn btn-warning"><a href="contact.html" class="nav-link text-black">Nous
+                                contacter</a></button>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container ">
+            <h2 class="contact-titre">Contact</h2>
+            <form id="form">
+                <div class="row g-3">
+                    <div class="col-md-12">
+                        <label for="secteur-activite" class="form-label">Quel est votre secteur d'activité ?</label>
+                        <select class="form-select" id="select" required>
+                            <option value="default">faite un choix</option>
+                            <option value="colectivite">Une collectivité</option>
+                            <option value="entreprise">Une entreprise</option>
+                            <option value="particulier">Un particulier</option>
+                        </select>
+                    </div>
+                    <br>
+                    <span id="plus">
+                    </span> <br>
+                    <div class="col-sm-6">
+                        <label for="firstName" class="form-label">Nom </label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Prenom</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="address" class="form-label">Adress</label>
+                        <input type="text" class="form-control" id="address" placeholder="12 Rue des etoile" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="firstName" class="form-label">ville</label>
+                        <input type="text" class="form-control" id="ville" placeholder="" value="" required>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Cedex</label>
+                        <input type="text" class="form-control" id="cedex" placeholder="" value="" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email <span class="text-muted">*</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="jean@mail.com">
+                    </div>
+                    <div class="col-12">
+                        <label for="email" class="form-label">Tel <span class="text-muted"></span></label>
+                        <input type="number" class="form-control" id="tel" placeholder="0400 00 06 02" required>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="message"
+                            style="height: 100px" required></textarea>
+                        <label for="floatingTextarea2">Votre messsage</label>
+                    </div>
+                    <span id="aff">
+                        
+                    </span>
+                </div>
+                <button type="submit" class="btn-warning">
+                    Envoyer
+                </button>
+            </form>
+        </div>
+        <h2> Ou nous trouver?</h2>
+        <div class="container-fluid contact text-center tel">
+            <span>
+                Sunpower<br>
+                2 rue de<br>
+                l’innovation à Grenoble<br><br>
+
+                Tél : +33 (0)4 34 12 23 56 <br>
+                Fax: +33 (0)9 61 38 33 33<br>
+            </span>
+            <div id="mapid" style=" height: 700px; width: 100%;"></div>
+            <script src="asset/js/cartesunpower.js "></script>
+            </p>
+        </div>
+        <script>
+            function Main() {
+                const form = document.getElementById('form');
+                form.addEventListener('submit',function () {
+                    let firstName =document.getElementById('firstName');
+                    let lasttName =document.getElementById('lastName');
+                    let address =document.getElementById('address');
+                    let ville =document.getElementById('ville');
+                    let cedex =document.getElementById('cedex');
+                    let message =document.getElementById('message');
+                    let tel =document.getElementById('tel');
+                     if (firstName == null || firstName == "") {
+                        document.getElementById("aff").innerHTML = "Merci de remplire toute les chant";
+                        submit = false;
+                    }
+                    if (lasttName == null || lasttName == "") {
+                        document.getElementById("aff").innerHTML = "Merci de remplire toute les chant";
+                        submit = false;
+                    }
+                    if (address == null || address == "") {
+                        document.getElementById("aff").innerHTML = "Merci de remplire toute les chant";
+                        submit = false;
+                    }
+                    if (ville == null || ville == "") {
+                        document.getElementById("aff").innerHTML = "Merci de remplire toute les chant";
+                        submit = false;
+                    }
+                    if (cedex == null || cedex == "") {
+                        document.getElementById("aff").innerHTML = "Merci de remplire toute les chant";
+                        submit = false;
+                    }
+                    if (message == null || message == "") {
+                        document.getElementById("aff").innerHTML = "Merci de remplire toute les chant";
+                        submit = false;
+                    }
+                    if (tel == null || tel == "") {
+                        document.getElementById("aff").innerHTML = "Merci de remplire toute les chant";
+                        submit = false;
+                    }
+                    if (submit != false) {
+                        document.getElementById("aff").innerHTML = "Tout est ok";
+                    }
+
+                    console.log('ok');
+                });
+
+
+                document.getElementById("select").addEventListener("change", function () {
+                    let selection = document.getElementById("select").value;
+                    // if (selection == "colectivite" || selection == "particulier") {
+                    switch (selection) {
+                        case "entreprise":
+                            document.getElementById("plus").innerHTML = " <div class='col-sm-6'><label for='firstName' class='form-label'>Nom de l'entreprise</label><input type='text' class='form-control' id='firstName' required><div class='invalid-feedback'>Valid first name is required.</div></div>";
+                            break;
+
+                        case "colectivite":
+                            document.getElementById("plus").innerHTML = " <div class='col-sm-6'><label for='firstName' class='form-label'>Nom de la collectivité</label><input type='text' class='form-control' id='firstName' required><div class='invalid-feedback'>Valid first name is required.</div></div>";
+                            break;
+                        case "particulier":
+                            document.getElementById("plus").innerHTML = " ";
+                            break;
+                    }
+                    console.log(selection);
+                });
+            }
+            document.addEventListener('DOMContentLoaded', Main);
+        </script>
+    </main>
+
+    <!-- Footer -->
+   <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Nos références</h3>
+                        <ul>
+                            <li><a href="references.html#section1">La société</a></li>
+                            <li><a href="references.html">Les partenaires</a></li>
+                            <li><a href="references.html#section3">Les fondateurs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Nos activités</h3>
+                        <ul>
+                            <li><a href="activite.html">La recherche et le développement</a></li>
+                            <li><a href="activite.html#omb">Les Ombrières solaire</a></li>
+                            <li><a href="activite.html#acc">L'accompagnement</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>SunPower</h3>
+                        <p>Acteur dans la transition écologique.</p>
+                        <p>Tel : +33 6 21 56 89 87</p>
+                        <p>Adresse : 2 rue de l’innovation <br> 38000 Grenoble </p>
+                    </div>
+                    <div class="col item social">
+                        <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://snapchat.com"><i class="fab fa-snapchat"></i></a>
+                        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <p class="copyright">Equipe de choc © 2021</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add('bg-light', 'shadow');
+            } else {
+                nav.classList.remove('bg-light', 'shadow');
+            }
+        })
+    </script>
+
+</body>
+
+</html>

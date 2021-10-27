@@ -1,0 +1,41 @@
+h2{
+    text-align: center;
+    
+    
+}
+.contact-titre{
+    padding:2%;
+}
+.contact{
+    background-color: rgb(29, 79, 145);
+    padding: 2%;
+    text-align: center;
+    color: white;
+    font-weight: 69px !important;
+}
+span{
+    font-size: 26px;
+}
+/*
+form>*{
+    margin: 2%;
+    text-align: right;
+}*/
+form{
+    background-color:#FAFAFA;
+    padding:10px;
+    margin-left: 25%;
+    width:50%;
+}
+label {
+    margin-top:10px;
+    display:block;
+    }
+
+input, textarea, select, option {
+    background-color:#FFF3F3;
+    }
+.contact{
+    font-size: 16px;
+    
+}
